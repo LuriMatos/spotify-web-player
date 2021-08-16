@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spotify</title>
+    <meta charset="utf-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel='stylesheet' href='index.css' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap' />
+    <script src='index.js'></script>
+  </head>
+
+  <body>
+    <div class='layout'>
+      <nav class='sidebar'>
+        <div class='company'>
+          <img class='logo' src='./images/logo.png' alt='logo'></img>
+        </div>
+
+        <ul class='tabs'>
+          <li class='item'>
+            <img src='./icons/home.svg' class='icon' alt='home icon'></img>
+            <a href='#' class='title'>Início</a>
+          </li>
+          
+          <li class='item selected'>
+            <img src='./icons/search.svg' class='icon' alt='search icon'></img>
+            <a href='#' class='title'>Buscar</a>
+          </li>
+
+          <li class='item'>
+            <img src='./icons/books.svg' class='icon' alt='books icon'></img>
+            <a href='#' class='title'>Suas Bibliotecas</a>
+          </li>
+        </ul>
+
+        <div class='playlists'>
+          <h1 class='title'>Playlists</h1>
+
+          <div class='items'>
+            <button class='playlist-button create-playlist'>
+              <div class='add-icon'></div>
+              <span class="playlist-title">Criar playlist</span>
+            </button>
+
+            <button class='playlist-button liked-songs'>
+              <div class='heart-icon'></div>
+              <span class="playlist-title">Músicas Curtidas</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class='content'>
+        <div class='search-header'>
+          <div class='button-controls'>
+            <div class='control back'></div>
+
+            <div class='control forward'></div>
+          </div>
+
+          <div class='search-bar-container'>
+            <img class="search-icon" src='./icons/search.svg' alt='search icon'></img>
+
+            <input
+              class="search-input"
+              name="search-input"
+              placeholder="Busque músicas"
+              value=""
+            ></input>
+            
+            <img class="clean-icon" src='./icons/clear.svg' alt='search icon'></img>
+          </div>
+
+          <div class='user-icon'></div>
+        </div>
+
+        <div class="search-results-container">
+          <h2 class="search-results-title">Melhor resultado</h2>
+          
+          <div class="search-results"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
